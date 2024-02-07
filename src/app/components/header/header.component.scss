@@ -1,0 +1,39 @@
+header {
+    
+
+    .interface{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    a {
+        color: #8d8c8c;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    a:hover {
+        color: #fff;
+        transform: scale(1.05);
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        display: inline-block;
+        padding: 0 40px;
+    }
+
+    .btn-contato button{
+        padding: 10px 40px;
+        font-size: 18px;
+        font-weight: 600;
+        background-color: rgb(17, 123, 188);
+        border: 0;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+}
