@@ -1,44 +1,26 @@
-header {
-    
+.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-    .interface{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+a {
+    color: #8d8c8c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
 
-    a {
-        color: #8d8c8c;
-        text-decoration: none;
-        display: inline-block;
-        transition: .2s;
-    }
-
-    a:hover {
+    &:hover {
         color: #fff;
         transform: scale(1.05);
     }
+}
 
-    ul {
-        list-style-type: none;
-    }
+ul {
+    list-style-type: none;
+}
 
-    li {
-        display: inline-block;
-        padding: 0 40px;
-    }
-
-    .btn-contato button{
-        padding: 10px 40px;
-        font-size: 18px;
-        font-weight: 600;
-        background-color: rgb(17, 123, 188);
-        border: 0;
-        border-radius: 30px;
-        cursor: pointer;
-    }
-
-    .btn-contato button:hover {
-        box-shadow: 0px 0px 8px rgba(0, 128, 255, 0.804);
-    }
+li {
+    display: inline-block;
+    padding: 0 40px;
 }
