@@ -26,10 +26,12 @@ body {
     border: 0;
     border-radius: 30px;
     cursor: pointer;
+    transition: .2s;
 }
 
 .btn-contato button:hover {
     box-shadow: 0px 0px 8px rgba(0, 128, 255, 0.804);
+    transform: scale(1.05);
 }
 
 

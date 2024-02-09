@@ -9,6 +9,7 @@
     h1 {
         color: white;
         font-size: 1.85rem;
+        font-weight: 900;
     }
 
     p {
@@ -22,8 +23,20 @@
     }
 
     .img-topo-site img{
+        position: relative;
+        animation: floating 2s ease-in-out infinite alternate;
         height: 500px;
         padding-left: 100px; /* Ajuste conforme necessário */
+    }
+}
+
+
+@keyframes floating {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 30px;
     }
 }
 
