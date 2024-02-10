@@ -1,0 +1,43 @@
+.sobre .flex{
+    padding: 40px 4%;
+    align-items: center;
+    gap: 40px;
+
+    .img-sobre {
+        border: 3px solid rgb(240, 240, 249);
+        border-radius: 10px;
+        display: inline-block;
+
+        img {
+            display: block;
+        }
+    }
+    
+    .txt-sobre{
+        color: white;
+        
+        h2 {
+            font-size: 35px;
+            line-height: 40px;
+            margin-bottom: 25px;
+        }
+
+        span {
+            display: block;
+            color: blue;
+        }
+
+        p {
+            margin: 15px 0;
+            text-align: justify;
+        }
+
+        .btn-social{
+            padding: 0 20px;
+
+            img {
+                margin-left: 20px;
+            }
+        }
+    }
+}
