@@ -49,3 +49,14 @@
         }
     }
 }
+
+
+@media (max-width: 600px) {
+    .flex {
+        flex-direction: column;
+
+        .txt-sobre {
+            text-align: center;
+        }
+    }
+}
