@@ -23,6 +23,11 @@
         border-radius: 10px;
         transition: .2s;
         
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 18px #faf4f486;
+        }
+        
         img {
             width: 80px;
             height: 80px;
@@ -34,12 +39,10 @@
             margin: 15px 0;
             text-align: center;
         }
+
     }
 
-    .especialidades-box:hover {
-        transform: scale(1.05);
-        box-shadow: 0 0 18px #faf4f486;
-    }
+    
 
 
 }
