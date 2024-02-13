@@ -51,9 +51,16 @@
             margin: 20px 0 0;
 
             button {
+                background: black;
                 padding: 5px 10px;
                 border-radius: 7px;
                 margin-left: 8px;
+                transition: .2s;
+            }
+
+            button:hover {
+                transform: scale(1.02);
+                background-color: rgb(20, 147, 226);
             }
         }
     }
