@@ -41,7 +41,7 @@
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 970px) {
     .flex {
         flex-direction: column-reverse;
         align-items: center;
@@ -61,3 +61,7 @@
     }
 }
 
+@media (max-width: 768px) {
+
+
+}

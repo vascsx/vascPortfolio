@@ -3,8 +3,9 @@
     box-shadow: 0 0 40px 10px #ffffff1d;
 
     h2 {
-        color: blue;
-        font-size: 3rem;
+        color:rgba(47, 115, 243, 0.84);;
+        font-size: 3rem; 
+        font-weight: 600;
         text-align: center;
     }
     .flex {
@@ -62,7 +63,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 746px) {
     .flex {
         flex-direction: column;
         align-items: center;
@@ -74,4 +75,14 @@
             height: 400px;
         }
     }
+}
+
+
+@media (min-width: 601px) and (max-width: 1205px) {
+    
+    .flex {
+        gap: 20px;
+    }
+
+
 }
