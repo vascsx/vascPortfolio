@@ -13,6 +13,19 @@
         margin-top: 60px;
     }
 
+    .icons-project {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+        margin: 15px;
+        img{
+            width: 30px;
+        }
+    }
+    
+
     .img-project {
         width: 360px;
         height: 460px;
@@ -48,7 +61,7 @@
         }
 
         .btn-project {
-            margin: 20px 0 0;
+            margin: 4px 0 0;
 
             button {
                 background: black;
