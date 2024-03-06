@@ -5,7 +5,7 @@ ul {
 }
 
 #nav {
-  padding: 0px 50px;
+  padding: 0px 150px;
 
 }
 
@@ -45,8 +45,70 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #0a0a0a;
+  background: #070707;
 }
+
+
+body {
+  transition: background 0.2s linear;
+}   ////
+
+body.dark {
+  background-color: #0a0a0a;
+}
+
+.btn-theme {
+  position: absolute;
+  right: 26px;
+  top: 20px;
+  .sol {
+    color: #F1C40F;
+  }
+
+  .lua {
+    color: #f39c12;
+  }
+  .label {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 25px;
+    width: 55px;
+
+    transform: scale(1.5);
+    .ball {
+      background-color: #FFF;
+      border-radius: 50%;
+      position: absolute;
+      left: 3px;
+      height: 25px;
+      width: 25px;
+      
+
+      transform: translateX(0px);
+      transition: transform .2s linear;
+    }
+  }
+
+  .checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+
+
 
 #menu {
   display: flex;
