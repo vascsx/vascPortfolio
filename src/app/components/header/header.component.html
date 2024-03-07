@@ -4,14 +4,16 @@
         <button id="btn-mobile" (click)="toggleMenu($event)" (touchstart)="toggleMenu($event)">Menu
             <span id="hamburger"></span>
         </button>
-        <div class="btn-theme">
-          <input type="checkbox" class="checkbox" id="chk">
-          <label class="label" for="chk">
+        <button class="btn-theme" (click)="toggleTheme()">
+          <label class="label">
             <mat-icon class="material-symbols-outlined lua">dark_mode</mat-icon>
             <mat-icon class="material-symbols-outlined sol">light_mode</mat-icon>
-            <div class="ball"></div>
+            <div class="ball" [class.move]="isDarkMode"></div>
           </label>
-        </div>
+        </button>
+
+        
+        
         
       
       <ul id="menu" role="menu">
