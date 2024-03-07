@@ -14,7 +14,7 @@
 
     p {
         font-size: 1rem;
-        color: rgba(255, 255, 255, 0.637);
+        color: var(--secondary-text);
         padding-left: 8px;
     }
 
@@ -44,11 +44,24 @@
         &:hover {
           background-color: #555;
         }
-      }
+      }  
       
-      
-}
+    }
 
+    .btn-back {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 50px;
+        .btn-scroll-top {
+        background-color: rgb(158, 153, 153);
+        border-radius: 50%;
+         img {
+            height: 35px;
+            width: 35px;
+         }
+        }
+    }
+    
 
 @keyframes floating {
     0% {

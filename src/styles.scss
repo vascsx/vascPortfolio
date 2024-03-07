@@ -3,10 +3,15 @@
 
 :root {
     --primary-text: #FFF;
+    --text: #000;
+    --secondary-text: rgba(255, 255, 255, 0.637);
+    --navbar: rgba(0, 0, 0, 0.755);
 }
 
 .dark{
     --primary-text:black;
+    --secondary-text: rgba(0, 0, 0, 0.821);
+    --navbar: rgb(240, 240, 240);
 }
 
 html {
@@ -14,7 +19,7 @@ html {
 }
 
 .dark {
-    background-color: #FFF;
+    background-color: #dbd8d8cd;
 }
 
 
