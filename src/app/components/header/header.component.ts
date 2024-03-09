@@ -1,13 +1,17 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormsModule, NgModel } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 
 
 
+
+
+
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [MatIconModule, FormsModule,],
+  imports: [MatIconModule, FormsModule, CommonModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
@@ -30,22 +34,20 @@ export class HeaderComponent {
       }
     }
 }
-    isDarkMode: boolean = false;
+   
 
-  constructor() { }
 
-  toggleTheme(): void {
-    this.isDarkMode = !this.isDarkMode;
+    darkMode: boolean = false;
 
-    const bodyElement = document.body;
-    if (this.isDarkMode) {
-      bodyElement.classList.add('dark');
-      bodyElement.classList.remove('light');
-    } else {
-      bodyElement.classList.add('light');
-      bodyElement.classList.remove('dark');
+    toggleDarkMode(event: Event) {
+      const target = event.target as HTMLInputElement;
+      this.darkMode = target.checked;
+      if (this.darkMode) {
+        document.body?.classList.add('dark');
+      } else {
+        document.body?.classList.remove('dark');
+      }
     }
-  }
 
   }
 
