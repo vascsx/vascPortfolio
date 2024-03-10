@@ -64,16 +64,20 @@
             margin: 4px 0 0;
 
             button {
-                background: black;
+                background: none;
                 padding: 5px 10px;
-                border-radius: 7px;
+                border-radius: 38%;
                 margin-left: 8px;
                 transition: .2s;
+
+                img {
+                    width: 25px;
+                }
             }
 
             button:hover {
                 transform: scale(1.02);
-                background-color: rgb(20, 147, 226);
+                background-color: rgba(63, 222, 250, 0.852);
             }
         }
     }
