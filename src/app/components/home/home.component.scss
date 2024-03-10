@@ -48,19 +48,7 @@
       
     }
 
-    .btn-back {
-        display: flex;
-        justify-content: flex-end;
-        margin-right: 50px;
-        .btn-scroll-top {
-        background-color: rgb(158, 153, 153);
-        border-radius: 50%;
-         img {
-            height: 35px;
-            width: 35px;
-         }
-        }
-    }
+  
     
 
 @keyframes floating {
@@ -91,9 +79,4 @@
             margin-right: 80px;
         }
     }
-}
-
-@media (max-width: 768px) {
-
-
 }

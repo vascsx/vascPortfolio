@@ -122,8 +122,8 @@ body.dark {
   }
   
   label {
-    width: 80px;
-    height: 45px;
+  width: 80px;
+  height: 45px;
   border-radius: 999px;
   background: #F3F3F3;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.05) inset;
@@ -191,7 +191,7 @@ label:active .circle {
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 660px) {
   #menu {
     display: block;
     position: absolute;
@@ -254,5 +254,14 @@ label:active .circle {
         top: -7px;
       }
     }
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .button {
+    display: none;
   }
 }
