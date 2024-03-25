@@ -2,72 +2,28 @@
     <div class="interface">
         <h2>PROJETOS</h2>
         <div class="flex">
-            <div class="img-project" style="background-image: url(assets/projetos/delivery.png);">
-                <div class="overlay">
-                    Vasc Pizzaria
-                    <div class="icons-project">
-                        <img src="assets/icons-especialidades/angular.svg" alt="">
-                        <img src="assets/icons-especialidades/typescript.svg" alt="">
-                        <img src="assets/icons-especialidades/sass.svg" alt="">
-                    </div>
-                    <div class="btn-project">
-                    <button
-                        ><a href="https://delivery-red.vercel.app" target="_blank">
-                            <mat-icon class="material-symbols-outlined">
-                                language
-                            </mat-icon>
-                        </a>
-                    </button>
-                    </div>
+            <div *ngFor="let projeto of projetos" class="img-project" [style.backgroundImage]="'url(' + projeto.imagem + ')'">
+              <div class="overlay">
+                {{ projeto.nome }}
+                <div class="icons-project">
+                  <img *ngFor="let especialidade of projeto.especialidades" [src]="getIconeEspecialidade(especialidade)" alt="">
                 </div>
-
-            </div><!--img-projects-->
-
-            <div class="img-project" style="background-image: url(assets/projetos/pokedexApi.png);">
-                <div class="overlay">
-                    Pokedex Api Fetch
-
-                    <div class="icons-project">
-                        <img src="assets/icons-especialidades/html.svg" alt="">
-                        <img src="assets/icons-especialidades/css.svg" alt="">
-                        <img src="assets/icons-especialidades/javascript.svg" alt="">
-                    </div>
-
-                    <div class="btn-project">
-                        <button><a href="https://pokedex-fetch-api.netlify.app" target="_blank">
-                            <mat-icon class="material-symbols-outlined">
-                                language
-                            </mat-icon>
-                        </a></button>
-                        <button><a href="https://github.com/vascsx/pokedexApiFetch" target="_blank">
-                            <img src="assets/git.svg" alt="" width="30px">
-                        </a></button>
-                    </div>
+                <div class="btn-project">
+                  <button>
+                    <a [href]="projeto.link" target="_blank">
+                      <mat-icon class="material-symbols-outlined">language</mat-icon>
+                    </a>
+                  </button>
+                  <button *ngIf="projeto.github">
+                    <a [href]="projeto.github" target="_blank">
+                      <img src="assets/git.svg" alt="" width="30px">
+                    </a>
+                  </button>
                 </div>
-
-
+              </div>
             </div><!--img-projects-->
-            
-            <div class="img-project" style="background-image: url(assets/projetos/lista-de-tarefas.png);">
-                <div class="overlay">
-                    Lista de tarefas
-                    <div class="icons-project">
-                        <img src="assets/icons-especialidades/angular.svg" alt="">
-                        <img src="assets/icons-especialidades/typescript.svg" alt="">
-                        <img src="assets/icons-especialidades/sass.svg" alt="">
-                    </div>
-                    <div class="btn-project">
-                        <button><a href="https://list-de-tarefas.netlify.app" target="_blank">
-                            <mat-icon class="material-symbols-outlined">
-                                language
-                            </mat-icon>
-                        </a></button>
-                        <button><a href="https://github.com/vascsx/lista-de-tarefas" target="_blank">
-                            <img src="assets/git.svg" alt="" width="30px">
-                        </a></button>
-                    </div>
-                </div>
-            </div><!--img-projects-->
-        </div><!--flex-->
+          </div><!--flex-->
     </div><!--interface -->
 </section><!--portfolio -->
+
+  
