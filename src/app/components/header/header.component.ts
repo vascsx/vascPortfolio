@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormsModule, NgModel } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 

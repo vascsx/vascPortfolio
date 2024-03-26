@@ -4,17 +4,20 @@ import { EspecialidadesComponent } from '../especialidades/especialidades.compon
 import { SobreComponent } from '../sobre/sobre.component';
 import { PortfolioComponent } from '../portfolio/portfolio.component';
 import { MatIconModule } from '@angular/material/icon';
+import { ScrollTopButtonComponent } from '../scroll-top-button/scroll-top-button.component';
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [
-  HeaderComponent,
-  EspecialidadesComponent,
-  SobreComponent, 
-  PortfolioComponent,
-  MatIconModule,],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+    selector: 'app-home',
+    standalone: true,
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.scss',
+    imports: [
+        HeaderComponent,
+        EspecialidadesComponent,
+        SobreComponent,
+        PortfolioComponent,
+        MatIconModule,
+        ScrollTopButtonComponent
+    ]
 })
 export class HomeComponent {
 
