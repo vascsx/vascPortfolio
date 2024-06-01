@@ -11,11 +11,13 @@ import { Component } from '@angular/core';
 })
 export class EspecialidadesComponent {
   tecnologias = [
-    { nome: 'Angular', icone: 'assets/icons-especialidades/angular.svg' },
+    {nome: 'C#', icone: 'assets/icons-especialidades/csharp.svg'},
     { nome: 'Java', icone: 'assets/icons-especialidades/java.svg' },
-    { nome: 'Typescript', icone: 'assets/icons-especialidades/typescript.svg' },
+    {nome: 'AzureDevOps', icone: 'assets/icons-especialidades/azuredevops.svg'},
     { nome: 'Mysql', icone: 'assets/icons-especialidades/mysql.svg' },
-    { nome: 'Scss', icone: 'assets/icons-especialidades/sass.svg' },
-    { nome: 'Php', icone: 'assets/icons-especialidades/php.svg' }
+    {nome: 'Postman', icone: 'assets/icons-especialidades/postman.svg'},
+    { nome: 'Typescript', icone: 'assets/icons-especialidades/typescript.svg'},
+    { nome: 'Angular', icone: 'assets/icons-especialidades/angular.svg'}
+    
   ];
 }
